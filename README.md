@@ -72,3 +72,13 @@ Open `Untitled13.ipynb` and run the cells to:
 ---
 ## summary 
 the code in the jupyter notebook helps to import various dataset for stock market train model and make predictions on it 
+
+## Project Overview 
+this project as of now is in the devolopment stages we are focusing on to make a stock comparing and analysis tool that lets you pick stocks and analyse them 
+## the dataset 
+the dataset is used using python librarie yfinance 
+why yfinance and how it contributes to the dataset ?
+yfinance uses an accronym for different companies this in turn what it does is that it takes that accronym for the company and then gives you stock data for the start and end date as requested by the user 
+# usage example
+ideally the project must take the user input company and display its stock report from start date to end date as requested 
+and then also helps plot the data from start date to end date depending upon the users querie 
