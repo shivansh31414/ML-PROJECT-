@@ -1,2 +1,43 @@
-# Ignore virtual environments
+# Virtual environments
 venv/
+.env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+*.log
+logs/
+
+# Database dumps
+*.sql
+*.sqlite3
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage/test reports
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Build/dist artifacts
+build/
+dist/
+*.egg-info/
+
+# Node modules (if frontend later)
+node_modules/
+
+# Docker
+*.pid
+*.seed
