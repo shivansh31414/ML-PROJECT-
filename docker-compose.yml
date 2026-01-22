@@ -1,0 +1,40 @@
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    container_name: ml_backend
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./backend/.env
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - db
+
+  frontend:
+    build: ./frontend
+    container_name: ml_frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    environment:
+      - VITE_API_BASE_URL=http://localhost:5000
+
+  db:
+    image: mysql:8.0
+    container_name: ml_db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mlproject
+      MYSQL_USER: mluser
+      MYSQL_PASSWORD: mlpassword
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
