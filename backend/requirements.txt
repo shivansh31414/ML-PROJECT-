@@ -1,0 +1,23 @@
+# --- Core framework ---
+Flask==3.0.0
+Flask-Cors==4.0.0
+
+# --- Database / ORM ---
+SQLAlchemy==2.0.25
+mysqlclient==2.2.4
+alembic==1.13.1
+
+# --- Authentication / Security ---
+Flask-JWT-Extended==4.6.0
+Werkzeug==3.0.1
+
+# --- ML / Data Science (if using models) ---
+scikit-learn==1.4.0
+numpy==1.26.3
+pandas==2.2.0
+
+# --- Production server ---
+gunicorn==21.2.0
+
+# --- Utilities ---
+python-dotenv==1.0.1
